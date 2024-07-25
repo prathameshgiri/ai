@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI chatbot made by Abuzar</title>
+    <link rel="stylesheet" href="assets/index.css">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .app {
+            height: 95%;
+        }
+
+        .AI,
+        .loader {
+            float: right;
+            margin: 0.5rem;
+            width: -moz-max-content;
+            width: max-content;
+            max-width: 40rem;
+            margin-left: 200rem;
+            border-radius: 6px;
+            padding: 0.5rem;
+            background-color: rgb(226, 232, 240);
+            color: rgb(0, 0, 0);
+            overflow-x: hidden;
+            margin-top: 0.5rem;
+        }
+
+        .user {
+            overflow-x: hidden;
+            width: -moz-max-content;
+            width: max-content;
+            max-width: 30rem;
+            margin-left: 0.5rem;
+            margin-right: 0rem;
+            border-radius: 6px;
+            padding: 0.5rem;
+            
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .loader {
+            
+            color: rgba(101, 106, 112, 0.897);
+            width: 4px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            box-shadow: 19px 0 0 7px, 38px 0 0 3px, 57px 0 0 0;
+            transform: translateX(-70px);
+            animation: l21 0.5s infinite alternate linear;
+        }
+
+        @keyframes l21 {
+            50% {
+                box-shadow: 19px 0 0 3px, 38px 0 0 7px, 57px 0 0 3px;
+            }
+            100% {
+                box-shadow: 19px 0 0 0, 38px 0 0 3px, 57px 0 0 7px;
+            }
+        }
+
+        @media (max-width: 840px) {
+            .user {
+                max-width: 16rem;
+            }
+            .AI {
+                max-width: 16rem;
+            }
+        }
+    </style>
+    <script type="module" crossorigin src="assets/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C1lcmYvu.css">
+</head>
+
+<body>
+    
+    <div class="hero h-screen bg-slate-900 flex items-center justify-center flex-wrap">
+        <div class="app w-4/5 bg-slate-600 rounded-md" style= "text-align: center; background-color:rgb(0, 0, 0); color:white">
+            Chat With AI 
+            <div id="output" class="output bg-slate-300 w-full h-4/5 rounded-md overflow-y-auto"></div>
+            <div class="input bg-slate-500 w-full py-7 mt-5 flex justify-center items-center px-2 gap-2 rounded-md">
+                <input id="question" style="color: black;" type="text" class="w-4/5 rounded-md py-3 px-8" />
+                <button id="submitButton" style="background-color: rgb(0, 0, 0);" class="bg-slate-300 py-3 px-4 sm:px-8 rounded-md hover:bg-slate-400">
+            Submit
+          </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/index.js"></script>
+
+</html>
